@@ -19,7 +19,8 @@ body {
     transition: all 0.3s ease-in-out;
 }
 div {
-    margin-left: 55%;
+    margin-right: 5%;
+    text-align: right;
 }
 #isNight{
     margin-bottom: 5%;
@@ -78,11 +79,11 @@ h1, h2, h4 {
 }
 
 h1 {
-    font-size: 10vh;
+    font-size: 6vh;
 }
 h2 {
-    font-size: 8vh;
+    font-size: 4vh;
 }
 h4 {
-    font-size: 6vh;
+    font-size: 2vh;
 }
