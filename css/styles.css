@@ -8,42 +8,71 @@ body {
 
 #s-main {
     display: flex;
-    justify-content: flex-start;
-    align-items: left;
+    justify-content: flex-end;
+    align-items: right;
     flex-direction: column;
     color: white;
     background-color: black;
     width: 100%;
     height: 100vh;
     margin: 0;
+    transition: all 0.3s ease-in-out;
 }
 div {
-    margin-left: 5%;
+    margin-left: 55%;
 }
-#ip{
-    margin-top: 5%;
+#isNight{
+    margin-bottom: 5%;
 }
 
 .morning {
-    background: url('../img/morning.jpg') top left no-repeat;
-    background-size: cover;
+    background: linear-gradient(143deg, #2980b9, #1565C0);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 51s ease infinite;
+    -moz-animation: AnimationName 51s ease infinite;
+    animation: AnimationName 51s ease infinite;
 }
 
 .afternoon {
-    background: url('../img/afternoon.jpg') top left no-repeat;
-    background-size: cover;
+    background: linear-gradient(143deg, #1565C0, #c33764);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 51s ease infinite;
+    -moz-animation: AnimationName 51s ease infinite;
+    animation: AnimationName 51s ease infinite;
 }
 
 .night {
-    background: url('../img/night.jpg') top left no-repeat;
-    background-size: cover;
+    background: linear-gradient(143deg, #c33764, #0f0c29);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 51s ease infinite;
+    -moz-animation: AnimationName 51s ease infinite;
+    animation: AnimationName 51s ease infinite;
 }
 
 .midnight {
-    background: url('../img/midnight.jpg') top left no-repeat;
-    background-size: cover;
+    background: linear-gradient(143deg, #0f0c29, #2980b9);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 51s ease infinite;
+    -moz-animation: AnimationName 51s ease infinite;
+    animation: AnimationName 51s ease infinite;
 }
 
+@-webkit-keyframes AnimationName {
+    0%{background-position:26% 0%}
+    50%{background-position:75% 100%}
+    100%{background-position:26% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:26% 0%}
+    50%{background-position:75% 100%}
+    100%{background-position:26% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:26% 0%}
+    50%{background-position:75% 100%}
+    100%{background-position:26% 0%}
+}
 h1, h2, h4 {
     margin: 0;
 }
