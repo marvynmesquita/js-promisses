@@ -1,7 +1,7 @@
 fetch('https://api.ipify.org?format=json')
 .then(response => response.json())
 .then(data => {
-    fetch('http://ip-api.com/json/' + data.ip)
+    fetch('https://ip-api.com/json/' + data.ip)
     .then(response => response.json())
     .then(data => {
         document.getElementById('geo').innerHTML = '<h1>'+ data.city + ' - ' + data.region + '</h1>'
