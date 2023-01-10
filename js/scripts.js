@@ -1,10 +1,10 @@
 fetch('https://api.ipify.org?format=json')
 .then(response => response.json())
 .then(data => {
-    fetch('http://ip-api.com/json/' + data.ip)
+    fetch('https://ipwho.is/' + data.ip)
     .then(response => response.json())
     .then(data => {
-        document.getElementById('geo').innerHTML = '<h1>'+ data.city + ' - ' + data.region + '</h1>'
+        document.getElementById('geo').innerHTML = '<h1>'+ data.city + ' - ' + data.region_code + '</h1>'
     })
 })
 
