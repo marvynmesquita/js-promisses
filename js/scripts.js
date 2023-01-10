@@ -15,7 +15,7 @@ var link = document.querySelector("link[rel~='icon']")
 setInterval(() => {
     let d = new Date()
     document.getElementById('time').innerHTML = '<h4>'+ d.toLocaleTimeString(); + '</h4>'
-    if (d.getHours() > 6 && d.getHours() < 12) {
+    if (d.getHours() >= 6 && d.getHours() < 12) {
         document.getElementById('isNight').innerHTML = '<h2>Bom dia!</h2>'
         principal.classList.add('morning')
         if (!link) {
@@ -28,9 +28,9 @@ setInterval(() => {
         if (document.title != newTitle) {
             document.title = newTitle;
         }
-    } else if (d.getHours() > 12 && d.getHours() < 18) {
+    } else if (d.getHours() >= 12 && d.getHours() < 18) {
         document.getElementById('isNight').innerHTML = '<h2>Boa tarde!</h2>'
-        principal.classList.add('evening')
+        principal.classList.add('afternoon')
         if (!link) {
             link = document.createElement('link');
             link.rel = 'icon';
@@ -41,7 +41,7 @@ setInterval(() => {
         if (document.title != newTitle) {
             document.title = newTitle;
         }
-    } else if (d.getHours() > 18) {
+    } else if (d.getHours() >= 18) {
         document.getElementById('isNight').innerHTML = '<h2>Boa noite!</h2>'
         principal.classList.add('night')
         if (!link) {
