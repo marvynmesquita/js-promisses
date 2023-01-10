@@ -5,6 +5,7 @@ fetch('https://api.ipify.org?format=json')
     .then(response => response.json())
     .then(data => {
         document.getElementById('geo').innerHTML = '<h1>'+ data.city + ' - ' + data.region_code + '</h1>'
+        console.log('https://ipwho.is/' + data.ip)
     })
 })
 
