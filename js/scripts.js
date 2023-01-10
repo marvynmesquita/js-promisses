@@ -16,7 +16,7 @@ setInterval(() => {
     let d = new Date()
     document.getElementById('time').innerHTML = '<h4>'+ d.toLocaleTimeString(); + '</h4>'
     if (d.getHours() > 6 && d.getHours() < 12) {
-        document.getElementById('isNight').innerHTML = '<h2>Boa manhã</h2>'
+        document.getElementById('isNight').innerHTML = '<h2>Bom dia!</h2>'
         principal.classList.add('morning')
         if (!link) {
             link = document.createElement('link');
@@ -29,7 +29,7 @@ setInterval(() => {
             document.title = newTitle;
         }
     } else if (d.getHours() > 12 && d.getHours() < 18) {
-        document.getElementById('isNight').innerHTML = '<h2>Boa tarde</h2>'
+        document.getElementById('isNight').innerHTML = '<h2>Boa tarde!</h2>'
         principal.classList.add('evening')
         if (!link) {
             link = document.createElement('link');
